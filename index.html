@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electronic Gems Song Survey</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey form</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-
-</body>
-
+    <body>
+        <main>
+            <h1 id="title">Electronic Gems Song Survey</h1>
+            <p id="description">Submit your song on this form for a chance of it being published on my yt channel.</p>
+            <form action="" id="survey-form">
+                <label for="name" id="name-label">
+                    Your Name/Alias
+                    <input type="text" name="name" id="name-input" placeholder="Name/Alias" required>
+                </label>
+                <label for="email" id="email-label">
+                    Your Email
+                    <input type="email" name="email" id="email-input" placeholder="Email" required>
+                </label>
+                <label for="number" id="number-label">
+                    Song length
+                    <input type="number" name="number" id="number-input" placeholder="1-5" min="1" max="5" required>
+                </label>
+                <label for="location" id="dropdown-label">
+                    Where from
+                    <select name="location" id="dropdown-select" required>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </label>
+                <label for="mention-Artist?" id="radio-">
+                    Want to be mentioned if published?
+                    <input type="radio" name="Yes/No" id="radio-Yes/No">Yes
+                    <input type="radio" name="Yes/No" id="radio-Yes/No">No
+                </label>
+                <label for="checkboxes" id="checkboxes-genre">
+                    Genre?
+                    <input type="checkbox" name="Synthwawe" id="checkbox-input" value="Synthwawe">Synthwawe
+                    <input type="checkbox" name="Vaporwawe" id="checkbox-input" value="Vaporwawe">Vaporwawe
+                    <input type="checkbox" name="Lo-Fi" id="checkbox-input" value="Lo-Fi">Lo-Fi
+                </label>
+                <label for="songfile" id="songfile-label">
+                    Submit the songfile you want to be published
+                    <input type="file" name="songfile" id="songfile-input" required>
+                </label>
+                <label for="Text-area" id="">
+                    If you got any questions,considerations or requests then write them here:
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label>
+                <label for="submit" id="">
+                    <input type="submit" value="Submit">
+                </label>
+            </form>
+        </main>
+    </body>
 </html>
