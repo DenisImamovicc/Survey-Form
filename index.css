@@ -1,6 +1,44 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: rgba(255, 217, 0, 0.74);
+    background-color: transparent;
 }
 
+body {
+    background-image: url("Images/Background-Img.jpg");
+    text-align: center;
+}
+
+#description {
+    margin-bottom: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: initial;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: rgb(19, 18, 18);
+    backdrop-filter: blur(1px);
+    padding: 15px 15px 15px 15px;
+    box-shadow: 10px 10px 10px 10px rgba(255, 255, 0, 0.712);
+}
+
+#survey-form:focus {
+    color: goldenrod;
+}
+
+#submit-label {
+    align-self: flex-end;
+}
